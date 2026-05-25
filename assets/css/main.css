@@ -1,0 +1,13 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+/* Tailwind v4: explicitly declare sources so utilities are generated */
+@source "../../app/**/*.{vue,js,ts}";
+@source "../../nuxt.config.{js,ts}";
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-white text-gray-900 transition-colors duration-300 dark:bg-gray-950 dark:text-gray-100;
+}
